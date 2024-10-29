@@ -4,12 +4,13 @@ import house from "../assets/bghouse2.jpg";
 import { serviceData } from "../data";
 const HeroAbout = () => {
   return (
-    <div className="h-screen">
+    <div className="h-auto">
+      <div className="">
+        
       <Parallax
         bgImage={house}
         strength={-200}
         bgImageStyle={{ objectFit: "cover" }}
-        className="relative"
       >
         <div className="flex justify-center items-center h-[400px] relative">
           <div className="absolute inset-0 bg-black opacity-40" />
@@ -17,14 +18,15 @@ const HeroAbout = () => {
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif">
               About Us
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-center">
+            <p className="text-lg sm:text-xl md:text-2xl text-center ">
               Welcome to Houzez Real Estate Theme
             </p>
           </div>
         </div>
       </Parallax>
+      </div>
 
-      <div className=" absolute bottom-14 bg-white shadow-2xl flex flex-col mx-44 justify-center items-center space-y-5  md:items-start py-11 px-5 lg:px-11">
+      <div className=" bg-white shadow-2xl  flex flex-col mx-5 md:mx-44 justify-center items-center space-y-5  md:items-start py-11 px-5 lg:px-11 ">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-11 ">
           {serviceData.map((item, index) => (
             <div key={index} className="flex items-start space-x-4 py-2 pr-2 ">
