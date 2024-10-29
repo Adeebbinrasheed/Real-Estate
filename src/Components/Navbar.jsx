@@ -73,7 +73,7 @@ const Navbar = () => {
           >
             FOR SALE
           </Link>
-          <Link className="hover:text-green-300" onClick={handleClick}>
+          <Link to='/ourAgents'className="hover:text-green-300" onClick={handleClick}>
             OUR AGENTS
           </Link>
           <Link className="hover:text-green-300" onClick={handleClick}>
