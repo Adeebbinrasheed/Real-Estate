@@ -14,8 +14,11 @@ import { SlSocialLinkedin } from "react-icons/sl";
 
 const Profiles = () => {
   return (
-    
-    <div className="flex justify-center pt-20 py-10">
+    <>
+    <div className="bg-gray-400 hidden md:block w-full h-20">
+
+    </div>
+    <div className="flex justify-center pt-14 py-10">
       <div className="flex flex-col justify-center gap-5 w-[90%] md:w-[80%] lg:w-[75%]">
         <div className="flex gap-1 font-light text-sm">
           <h1 className="flex justify-center items-center gap-2 text-[#269c11]">
@@ -24,10 +27,10 @@ const Profiles = () => {
           </h1>
           <h1 className="flex justify-center items-center gap-2">
             <IoIosArrowForward />
-            For Sale
+            Our Agents
           </h1>
         </div>
-        <h1 className="text-3xl font-serif">For Sale</h1>
+        <h1 className="text-3xl font-serif">Our Agents</h1>
         <div className=" flex flex-col justify-center  md:flex-row gap-6">
           <div className="flex flex-col gap-6 w-full">
             {[...Array(3)].map((_, index) => (
@@ -72,7 +75,7 @@ const Profiles = () => {
                     </div>
                     <hr />
                   </div>
-                  <div className="flex flex-col md:flex-row justify-between">
+                  <div className="flex flex-col md:flex-row justify-between space-y-4">
                     <div className="flex gap-4 text-lg">
                       <a href="#" aria-label="Facebook">
                         <FiFacebook />
@@ -139,6 +142,7 @@ const Profiles = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

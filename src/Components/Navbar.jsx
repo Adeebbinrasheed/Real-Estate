@@ -9,16 +9,15 @@ const Navbar = () => {
     setIsopen(!isopen);
   };
   return (
-    <div className="flex justify-around items-center p-4 pt-7 lg:bg-transparent lg:text-white bg-white text-black absolute top-0 left-0 w-full z-10">
-      <button onClick={handleClick} className="lg:hidden text-2xl">
-        {isopen ? <MdOutlineClose /> : <RiMenu2Fill />}
-        <h1></h1>
-      </button>
+    <div className="flex justify-between px-5 md:px-20 items-center p-4 pt-7 lg:bg-transparent lg:text-white bg-white text-black absolute top-0 left-0 w-full z-10">
       <div>
         <Link to="/">
           <h1 className="text-3xl  font-semibold font-sans">Housez</h1>
         </Link>
       </div>
+      <button onClick={handleClick} className="lg:hidden  text-2xl">
+        {isopen ? <MdOutlineClose /> : <RiMenu2Fill />}
+      </button>
       <div className="hidden lg:block space-x-5 ">
         <Link to="/" className="hover:text-green-300 font-sans hover:font-semibold">
           HOME
